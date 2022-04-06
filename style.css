@@ -1,0 +1,134 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  animation: colorChanger 10s ease-in-out infinite;
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+}
+h1 > a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.box,
+.fav-box,
+.box1 {
+  height: 150px;
+  width: 150px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px black solid;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.box,
+.box1 {
+  box-shadow: -2px 4px 20px 2px rgba(0, 0, 0, 0.75);
+}
+
+.box1 {
+  margin-top: -30px;
+  height: 250px;
+  width: 300px;
+  font-size: 20px;
+}
+
+.input-section {
+  padding-top: 50px;
+}
+
+.display-section {
+  margin-top: 20px;
+}
+
+.rgb {
+  margin-right: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Chewy", cursive;
+}
+.buttons {
+  box-shadow: 1px 6px 15px 2px rgba(0, 0, 0, 0.96);
+  border-style: solid;
+  border-radius: 0.4em;
+  padding: 0 30px 0 30px;
+  line-height: 10px;
+  height: 40px;
+  color: black;
+  background-color: white;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.buttons:hover {
+  opacity: 1;
+}
+.inputs {
+  padding: 7px;
+  font-size: 23px;
+  border-width: 1px;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: solid;
+  border-radius: 23px;
+  box-shadow: 0px 10px 10px rgba(66, 66, 66, 0.75);
+  text-align: center;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.inputs:hover {
+  cursor: pointer;
+}
+
+label {
+  font-weight: 600;
+}
+#fav-btn {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+#fav-btn:hover {
+  background-color: rgba(255, 184, 19, 0.876);
+  color: yellow;
+}
+#fav-btn:active {
+  background-color: rgba(187, 187, 187, 0.411);
+  color: red;
+}
+
+.favorites-section,
+.container h3,
+.carousel-item {
+  margin-top: 30px;
+}
+
+@keyframes colorChanger {
+  0% {
+    background-color: #0492c2;
+  }
+
+  50% {
+    background-color: #5dbb63;
+  }
+
+  100% {
+    background-color: #a91b0d;
+  }
+}
